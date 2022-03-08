@@ -1,0 +1,472 @@
+@charset "utf-8";
+@import url(../common/reset.css);
+
+#wrap{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+
+}
+/*header*/
+.header{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    /* background-color: blue; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* background-color: #fff; */
+    box-shadow: 0 1px 3px #ccc;
+    z-index: 999;
+}
+.header .inner-header{
+
+}
+.header .inner-header .nav{
+
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+}
+.header .inner-header .nav .gnb{
+    width: auto;
+    height: auto;
+    /* border: 1px solid; */
+}
+.header .inner-header .nav .gnb>ul{
+   display: flex;
+   justify-content: space-between;
+}
+.header .inner-header .nav .gnb>ul>li{
+    flex: 1;
+    /* border: 1px solid; */
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 3em;
+    /* background-color: #fffa; */
+}
+.header .inner-header .nav .gnb>ul>li.li1 a{
+    /* background-color: yellow; */
+}
+.header .inner-header .nav .gnb>ul>li.li2{
+    display: none;
+}
+.header .inner-header .nav .gnb>ul>li a{
+    display: block;
+    /*.gnb width를 auto해주고 
+    a태그에 padding 좌우준다.*/
+    padding: 0 1.5em;
+}
+.header .inner-header .nav .gnb>ul>li a:hover{
+    background-color: gray;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.header .inner-header .nav span.zoom{
+    display: block;
+    width: 42px;
+    height: 42px;
+    /* line-height: 42px; */
+    /* border: 1px solid; */
+    background-color: #ccc;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right-menu{
+    width: auto;
+    height: auto;
+    /* border: 1px solid #ccc; */
+    position: fixed; 
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    /* display: flex;
+    justify-content: center; */
+
+}
+.right-menu .scroll-btn{
+    /* border: 1px solid #ccc; */
+
+}
+.right-menu .scroll-btn>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: 1px solid #ccc; */
+
+}
+.on{
+    background-color: rgb(0, 255, 234)
+}
+.right-menu .scroll-btn>ul>li{
+    width: 20px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    
+}
+.right-menu .scroll-btn>ul>li:hover{
+    background-color: rgb(0, 149, 248);
+    transition: all 0.3s;
+}
+.right-menu .scroll-btn>ul>li:not(last-child){
+    margin-bottom: 3px;
+}
+/*container*/
+.container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+}
+.container .inner-container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+}
+.container .inner-container .sections{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+}
+.container .inner-container .sections .section{
+
+    width: 100%;
+    height: auto;
+    
+}
+.container .inner-container .sections .section.sec1{
+    width: 100%;
+    height: auto;
+}
+.container .inner-container .sections .section.sec1 .sec-con{
+    width: 100%;
+    height: 100vh;
+    background: url(../../img/bg_1.JPG) no-repeat 50%/cover;
+    background-attachment: fixed;
+    filter: grayscale(70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .inner-container .sections .section.sec1 .sec-con .my-logo{
+    border: 1px solid white;
+    font-size: 1.2rem;
+    padding: 1em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    background-color: rgb(0, 255, 234);
+    color: #fffa;
+    transition: all 0.2;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.container .inner-container .sections .section.sec1 .sec-con .my-logo::after{
+    
+    content: '';
+    display: block;
+    /* width: 100%; */
+    width: 0%;
+    height: 2px;
+    background-color: #fffa;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    transition: all 0.4s;
+
+}
+.container .inner-container .sections .section.sec1 .sec-con .my-logo:hover::after{
+    width: 100%;
+    background-color: aqua;
+
+}
+.container .inner-container .sections .section.sec2{
+   display: flex;
+   justify-content: center;
+}
+.container .inner-container .sections .section.sec2 .sec-con{
+    width: 100%;
+    max-width: 960px;
+    /* border: 1px solid; */
+    padding: 60px 10px;
+    box-sizing: border-box;
+   
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con{
+   
+    /* border: 1px solid; */
+    
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con h1.title1{
+   line-height: 2.5em;
+    /* border: 1px solid; */
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+
+    
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con h2.title2{
+   line-height: 1.5em;
+    /* border: 1px solid; */
+    font-weight: 300;
+    font-size: 1rem;
+    /* font-style: italic; */
+    text-align: center;
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con p.p1{
+    font-size: 0.9rem;
+    line-height: 1.6em;
+    /* border: 1px solid; */
+    padding: 1em 0;
+    color: rgb(58, 58, 58);
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con .my-name{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    /* gap: 5px; */
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con .my-name .left-con{
+    /* border: 1px solid; */
+    flex: 1;
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con .my-name .left-con h3.title3{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 4em;
+}
+    
+.container .inner-container .sections .section.sec2 .sec-con .top-con .my-name .left-con img{
+   width: 100%;
+   display: block;
+   height: auto;
+   border-radius: 30px;
+   filter: grayscale(60%);
+   opacity: 0.6;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con .my-name .left-con img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con .my-name .right-con{
+    /* border: 1px solid; */
+    flex: 1;
+    line-height: 1.6em;
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+    color: rgb(58, 58, 58);
+    
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con .my-name .right-con .sec-con1{
+    
+}
+.container .inner-container .sections .section.sec2 .sec-con .top-con .my-name .right-con .sec-con1 p.p_1{
+    /* border: 1px solid; */
+    
+    
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con{
+   height: auto;
+    /* border: 1px solid;  */
+    padding: 40px 0;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con h2.title4{
+    line-height: 70px;
+    text-align: center;
+    font-size: 1.2rem;
+    /* border: 1px solid;  */
+    /* font-style: italic; */
+    color: #000;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills{
+    /* border: 1px solid; */
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li{
+    /* border: 1px solid; */
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk1{
+    line-height: 2em;
+    font-size: 1.2rem;
+    color: #000;
+    letter-spacing: 3px;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2 span{
+    background-color: rgb(58, 58, 58);
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2em;
+    display: block;
+}
+
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(2) span{
+    background-color: rgb(0, 255, 213);
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(2) span:hover{
+    background-color: rgb(209, 255, 4);
+    color: rgba(2, 139, 117, 0.822);
+    transition: all 0.3s;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(4) span{
+    background-color: rgba(0, 255, 213, 0.767);
+    width: 80%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(4) span:hover{
+    background-color: rgb(209, 255, 4);
+    color: rgba(2, 139, 117, 0.822);
+    transition: all 0.3s;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(6) span{
+    background-color: rgba(0, 255, 213, 0.651);
+    width: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(6) span:hover{
+    background-color: rgb(209, 255, 4);
+    color: rgba(2, 139, 117, 0.822);
+    transition: all 0.3s;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(8) span{
+    background-color:  rgba(0, 255, 213, 0.507);
+    width: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(8) span:hover{
+    background-color: rgb(209, 255, 4);
+    color: rgba(2, 139, 117, 0.822);
+    transition: all 0.3s;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(10) span{
+    background-color:  rgba(0, 255, 213, 0.507);
+    width: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(10) span:hover{
+    background-color: rgb(209, 255, 4);
+    color: rgba(2, 139, 117, 0.822);
+    transition: all 0.3s;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(12) span{
+    background-color:  rgba(0, 255, 213, 0.507);
+    width: 70%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container .inner-container .sections .section.sec2 .sec-con .bottom-con .my-skills>ul>li.sk2:nth-child(12) span:hover{
+    background-color: rgb(209, 255, 4);
+    color: rgba(2, 139, 117, 0.822);
+    transition: all 0.3s;
+}
+
+.container .inner-container .sections .section.sec3{
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
+.container .inner-container .sections .section.sec3 .sec-con1{
+    width: 100%;
+    height: 400px;
+    background: url(../../img/bg_0.JPG) no-repeat 50%/cover;
+    background-attachment: fixed;
+    filter: grayscale(60%);
+
+    display: flex;
+    justify-content: center;
+}
+.container .inner-container .sections .section.sec3 .sec-con1>ul{
+    width: 80%;
+    height: auto;
+    gap: 50px;
+    /* height: auto; */
+    /* border: 2px solid #f0f; */
+    position: fixed;
+    bottom:20%;
+    
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+.container .inner-container .sections .section.sec3 .sec-con1>ul>li{
+    
+    flex: 0 1 30%;
+    height: 200px;
+    /* width: 30%; */
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 20px;
+    /* background-color: #ccc; */
+    text-align: center;  
+    line-height: 200px;
+    cursor: pointer;
+}
+.container .inner-container .sections .section.sec3 .sec-con1>ul>li:hover{
+    background-color: rgba(255, 252, 252, 0.712);
+    transition: all 0.2s;
+    color: rgb(255, 252, 252);
+}
+
+  /*.ani-header*/  
+.aniHeader{
+    background-color: rgb(0, 255, 234);
+    /* 0.8초동안 변하는 것 */
+    transition: all 0.8s ease-in-out; 
+    /* transition: all 0.4s; */
+}
+
+/*footer*/
+.footer{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+}
+
+
+@media only screen and (max-width:640px){
+    
+    .header .inner-header .nav .gnb>ul>li.li1{
+        display: none;
+    }
+    .container .inner-container .sections .section.sec1 .sec-con .my-logo{
+        font-size: 1rem;
+    }
+    .container .inner-container .sections .section.sec1 .sec-con .my-logo span.s2{
+        display: none;
+    }
+    .container .inner-container .sections .section.sec2 .sec-con .top-con .my-name{
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        /* gap: 5px; */
+    }
+    .container .inner-container .sections .section.sec2 .sec-con .top-con .my-name .left-con{
+        flex-basis: 100%;
+    }
+    .container .inner-container .sections .section.sec2 .sec-con .top-con .my-name .right-con{
+        flex-basis: 100%;
+    }
+    
+}

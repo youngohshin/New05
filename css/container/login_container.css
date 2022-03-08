@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+
+}
+
+
+/*login_container*/
+.container{
+    width: 100%;
+    height: auto;
+    background:url(../../img/login_0.jpg)no-repeat 50%/cover;
+    /* border: 1px solid; */
+    
+}
+.container .inner-container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    margin-top: 60px;
+    
+    /* display: flex;
+    justify-content: center; */
+}
+.container .inner-container .login{
+}
+.container .inner-container .login .inner-login{
+    width: 100%;
+    /* height: auto; */
+    height: calc( 100vh - 60px - 120px );
+    /* border: 1px solid #0f0; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container .inner-container .login .inner-login .login-con{
+    /* border: 1px solid #ccc; */
+    flex: 0 1 400px;
+    height: auto;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 30px 40px;
+    box-sizing: border-box;
+
+    /* text-align: center; */
+    
+}
+.container .inner-container .login .inner-login .login-con h1.title{
+    /* border: 1px solid #ccc; */
+    color: #555;
+    /* background-color: #fff; */
+    line-height: 50px;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+.container .inner-container .login .inner-login .login-con .login-form{
+    background-color: rgba(242, 247, 222, 0.192);
+    
+}
+.container .inner-container .login .inner-login .login-con .login-form ul{
+    /* border: 1px solid #00f; */
+    
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li{
+    /* border: 1px solid #ccc; */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px 0;
+
+}.container .inner-container .login .inner-login .login-con .login-form ul>li:not(:last-child){
+    margin-right: 5px;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li a{
+    color: #ffffff;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li label{
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    /* columns: #ffffff; */
+    
+}.container .inner-container .login .inner-login .login-con .login-form ul>li input{
+    border: 0;
+    display: block;
+    flex: 1;
+    box-sizing: border-box;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.input1 input{
+    /* display: block; */
+    /* flex:1; */
+    line-height: 20px;
+    padding: 0 0px;
+    color: white;
+    background-color: rgba(0, 255, 0, 0);
+    /* box-sizing: border-box; */
+
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.input1{
+    
+    position: relative;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.input1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+    height: 1px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.input1 input:focus{
+    /* outline: 1px solid #00f; */
+    outline: 0;
+    background-color: rgba(204, 204, 204, 0.418);
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.loginBtn{
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li input[type=button]{
+    /* display: block; */
+    /* flex:1; */
+    padding: 10px;
+    line-height: 30px;
+    border-radius: 20px;
+    /* padding: 10px; */
+    /* box-sizing: border-box; */
+    cursor: pointer;
+    font-weight: 700;
+    /* padding: 50px 0; */
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li input[type=button]:hover{
+    background-color: rgb(65, 87, 57);
+    transition: all 0.2s;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+ 
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li1{
+    /* text-align: center; */
+    display: block;
+    font-weight: 300;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li2{
+    /* text-align: center; */
+    display: block;
+    position: relative;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li3{
+    /* text-align: center; */
+    display: block;
+    font-weight: 700;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li3 a{
+    
+    width: 90%;
+    display: block;
+    text-align: center;
+    background-color: rgb(190, 171, 0);
+    border-radius: 20px;
+    line-height: 50px;
+    color: black;
+    cursor: pointer;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li3 a:hover{
+    background-color: rgb(255, 251, 0);
+    transition: all 0.3s;
+    font-weight: 900;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li0{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    /* border: 1px solid #fff; */
+
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li0 a{
+   display: block;
+   
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li2 span{
+    font-size: 12px;
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li2 span::after{
+    content: '';
+    display: block;
+
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    width: 40%;
+    height: 1px;
+    background-color: #fff;
+
+    /*
+    left:100%
+    top:50%
+    transform:translateY(-50%); 얘는 li.li2 span에 position:relative 할경우*/
+}
+.container .inner-container .login .inner-login .login-con .login-form ul>li.li2 span::before{
+    content: '';
+    display: block;
+
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    width: 40%;
+    height: 1px;
+    background-color: #fff;
+}

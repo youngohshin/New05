@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/*join_container*/
+.container{
+ 
+}
+.container .inner-container{
+width: 100%;
+height: auto;
+background:url(../../img/joinbg.jpg)no-repeat 50%/cover;
+/* filter: grayscale(80%); */
+
+
+}
+.container .inner-container .join{
+    /* width: 100vw; */
+    /* height: auto; */
+    /* border: 1px solid #0f0; */
+    /* background-color: #0f0; */
+    margin-top: 100px;
+    
+    /* 
+display: flex;
+    justify-content: center; */
+    
+}
+.container .inner-container .join .inner-join{
+    
+    /* z-index: 999; */
+    /* flex: 0 1 400px; */
+    height: calc( 100vh - 60px - 120px ) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .inner-container .join .inner-join .join-con{
+    /* z-index: 999; */
+    
+    /* display: flex;
+    justify-content: center; */
+    flex: 0 1 500px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.container .inner-container .join .inner-join .join-con h1.title{ 
+    /* border: 1px solid #00f; */
+    background-color: #16aaff;
+    border-radius: 10px;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+    
+}
+.container .inner-container .join .inner-join .join-con .join-form{ 
+    /* border: 1px solid #00f; */
+    background-color: rgba(255, 255, 255, 0.808);
+    border-radius: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    /* padding: 0 10px; */
+  
+}
+.container .inner-container .join .inner-join .join-con .join-form ul{ 
+    /*form안에 ul이 있기에 >하지않고 바로 join-form ul로 작업함
+    <form>의 위치가 다른곳에 간다면 본래작업대로 ul앞에 > 넣어줌. */
+  /* display: flex;
+  justify-content: space-between; */
+
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li{ 
+    border: 1px solid rgba(91, 156, 255, 0.301);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 9px;
+    line-height: 25px;
+
+}
+
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1{ 
+    justify-content: space-between;
+
+}
+
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 label{ 
+    border: 1px solid #ccca;
+    border-radius: 20px;
+    background-color:  #16aaff;
+    line-height: 20px 0;
+    flex: 0 0 100px;
+    text-align: center;
+    align-items: center;
+    padding: 0 5px;
+    color: #fff;
+}
+
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .box{ 
+    /* border: 1px solid #f0f; */
+    flex: 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight:200;
+    margin-left: 10px;
+
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .box input{
+    display: block;
+    padding: 0 20px;
+    box-sizing: border-box;
+    line-height: 20px;
+} 
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .box input:focus{
+    outline: 2px solid #4790ffc2;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .box select{
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+    line-height: 20px;
+
+} 
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .box .userPhone{
+    position: relative;
+} 
+.container .inner-container .join .inner-join .join-con .join-form ul>li.input1 .box .userPhone:not(:last-child){
+    margin-right: 5px;
+    /* position: relative; */
+} 
+.container .inner-container .join .inner-join .join-con .join-form ul>li textarea{
+    display: block;
+    /* width: 100%; */
+    flex: 0 1 100%;
+    resize: none;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li:last-child{
+    /* text-align: center;  */
+    /* display: block; */
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: none;
+    padding: 20px;
+    background-color: rgb(223, 218, 210);
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li:last-child input{
+    /* width: 200px; */
+    height: 50px;
+    display: block;
+    flex: 0 0 200px;
+    background-color: rgb(254, 255, 185);
+    color: #555;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    /* border: none; */
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li:last-child input:hover{
+    background-color: rgb(255, 251, 0);
+    transition: all 0.2s;
+    font-size: 17px;
+}
+.container .inner-container .join .inner-join .join-con .join-form ul>li textarea:focus{
+    outline: 2px solid #567a02ec;
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: rgb(219, 217, 217);
+}
